@@ -12,8 +12,8 @@ import textwrap
 from PIL import Image
 import google.generativeai as genai
 
-os.getenv("AIzaSyDLpRUlSD-YqduxxlTHmQJERt9wS2YAOk8")
-genai.configure(api_key=os.getenv("AIzaSyDLpRUlSD-YqduxxlTHmQJERt9wS2YAOk8"))
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 ## Function to load OpenAI model and get respones
 
